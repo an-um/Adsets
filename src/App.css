@@ -1,0 +1,173 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root{
+  --color1:#1977F1;
+}
+
+html,body{
+  overflow-x: hidden;
+}
+html,body{
+  width: 100%;
+  min-height: 100vh;
+}
+
+
+
+
+
+
+
+
+
+.editOptions{
+  transform: scaleY(0);
+  transition: transform 0.6s;
+  transform-origin: top;
+}
+.edit_options_container{
+  
+  transition: transform 0.6s;
+  cursor: pointer;
+}
+.edit_options_container:hover .editOptions{
+  transition: transform 0.6s;
+  transform-origin: bottom;
+
+  transform: scaleY(1);
+
+}
+
+.App {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.color-gray{
+  background-color: #828387;
+}
+
+.span-red{
+  background-color: #DA361B;
+  width: 25px;
+  height: 25px;
+}
+
+
+/* ==================== custom css ============= */
+.table_filter_button_container {
+  width: 100%;
+  row-gap: 10px;
+  column-gap: 10px;
+}
+.table_filter_button_container button svg{
+  margin: 0px !important;
+  padding: 0px !important;
+}
+.table_filter_button_container button{
+  margin: 0px !important;
+  min-width:35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* =========== sidebar css ==========  */
+.parent_wrapper{
+  display: grid;
+  grid-template-columns: 100px auto;
+  width: 100%;
+  
+}
+
+.sidebar_launcher .icon{
+  color: black;
+  margin-right: 10px;
+  font-size: 25px;
+  cursor: pointer;
+  
+}
+.closeIcon,.sidebar_launcher{
+  display: none;
+
+}
+.sidebarshow{
+  left: 0% !important;
+}
+@media screen and (max-width:800px) {
+  
+  .sidebar_launcher{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.closeIcon .icon{
+  color: var(--color1);
+  font-size: 25px;
+  cursor: pointer;
+
+}
+.closeIcon{
+  /* position: absolute;
+  right: 5px;
+  top: 5px; */
+  border: 1px solid var(--color1);
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  margin: auto;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
+  .sidarBarcontainer{
+  transition: 0.6s;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    z-index: 500;
+    
+    background: white;
+    overflow-y: auto;
+    
+  }
+  .parent_wrapper{
+    display: flex;
+  }
+
+}
+
+/* ================== side bar end ================== */
+
+.tab_buttons_container {
+  cursor: pointer;
+}
+
+.tab_buttons_container svg path, .tab_buttons_container b{
+  color: black;
+  stroke: black;
+
+}
+
+.tab_buttons_container:hover.tab_buttons_container svg path , .tab_buttons_container:hover.tab_buttons_container b{
+  stroke: var(--color1);
+  color: var(--color1);
+  
+}
+
+
+.tab_buttons_container.active svg path , .tab_buttons_container.active b{
+  
+    stroke: var(--color1) !important;
+    color: var(--color1) !important;
+  }
