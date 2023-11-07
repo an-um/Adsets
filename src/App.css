@@ -80,7 +80,7 @@ html,body{
 /* =========== sidebar css ==========  */
 .parent_wrapper{
   display: grid;
-  grid-template-columns: 100px auto;
+  grid-template-columns: 74px auto;
   width: 100%;
   
 }

@@ -43,7 +43,7 @@ function Colum() {
   </b>
 </div>
 
-
+ 
 <div onClick={()=>dispatch(changeState("ads"))}   class={`bg-[#FAFAFA] p-3 rounded-xl flex tab_buttons_container  items-center ${TabHandlerState.ads_tab===true?"active":""}`}>
   <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="20" height="18" fill="none" viewBox="0 0 20 18">
     <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M1 7h18M4 4h.01M7 4h.01M10 4h.01M3 17h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H3a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2Z"/>

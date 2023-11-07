@@ -77,7 +77,7 @@ function GetAllCheckBoxComp(){
      
        }
      }}
- className="w-4 h-4 text-black-600 bg-white-100 border-blue-300 rounded focus:ring-gray-100   focus:ring-2  "
+ className="w-[32px] h-[32] text-black-600 bg-white-100 border-blue-300 rounded focus:ring-gray-100  focus:ring-2  "
 />
    </>
     }
@@ -261,14 +261,14 @@ return <>
   <table className="w-full text-sm text-left  [&_tr_td]:text-black-700  [&_tr_td]:border [&_tr_td]:border-gray-200 [&_tr_th]:border [&_tr_th]:border-gray-200   text-gray-500">
     <thead className="text-xs text-black [&_tr_th]:capitalize [&_tr_th]:text-base  uppercase bg-white">
       <tr>
-        <th scope="col" className=" p-4">
+        <th scope="col" className=" py-4 px-3">
           <div className="flex items-center justify-content-between">
             
               <GetAllCheckBoxComp/>
             
          
           
-            <label htmlFor="checkbox-all-search" className="ml-2">
+            <label htmlFor="checkbox-all-search" className="font-bold xl:text-[20px]">
               Off/On
             </label>
           </div>

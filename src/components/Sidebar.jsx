@@ -44,7 +44,7 @@ const Sidebar = (e) => {
           <img className="mt-3 w-[29.13px] cursor-pointer" src={group9} alt="Logo" />
           <img className="mt-3 w-[34px] cursor-pointer " src={group11} alt="Logo" />
           <img className="mt-3 w-[25px] cursor-pointer" src={menuIcon} alt="Logo" />
-        </div>
+        </div> 
         <div className='border border-b-bloack w-[40px] mt-5 mb-2 mx-auto'></div>
         <div className='flex flex-col items-center justify-center'>
 

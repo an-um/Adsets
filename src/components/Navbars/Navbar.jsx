@@ -21,7 +21,7 @@ export const Navbar = (e) => {
                     </span>
                     {/* //////////////////////// */}
 
-                    <h4 className='text-[#3F3F3F] text:text-xl xl:text-[25px] font-bold'>Ad sets</h4>
+                    <h4 className='text-[#3F3F3F] ps-1.5 text:text-xl xl:text-[25px] font-bold'>Ad sets</h4>
                     <div className='min-[800px]:ps-4'>
                         <select id="countries" class=" max-[550px]:max-w-full max-[550px]:w-[100%]   bg-white border border-[#CECECE] text-[#3F3F3F] text-sm rounded-lg focus:outline-none p-2">
                             <option selected>Real Estate Clients 1 (1333892298299..)</option>
@@ -47,11 +47,11 @@ export const Navbar = (e) => {
                     </div>
                 </div>
             </div>
-            <div className='bg-white  shadow-lg px-3 py-2 rounded-lg border-l-4 border-[#1977F1]'>
+            <div className='bg-white ms-1 shadow-lg px-1 py-2 rounded-lg border-l-4 border-[#1977F1]'>
                 <div className='flex m-2 mx-3  items-start'>
-                    <img src={informationIcon} className='h-[21px] width: [21px] mt-1' alt='refesh' />
+                    <img src={informationIcon} className='h-[21.25px] width: [21.25px] mt-1' alt='refesh' />
                     <div className='ps-4'>
-                        <h6 className='font-bold 2xl:text-[18px]'>Additional information</h6>
+                        <h6 className='font-bold p-0.5 xl:text-[18px]'>Additional information</h6>
                         <p className='2xl:text-[17px] font-semibold pt-[11px] pb-[13px]'>Does your business, Conversions Digital Marketing, focus on politic or on advocating for issues of national importance? We'll use information to improve the quality of ads show to people.</p>
                         <div className='flex gap-2'>
                             <button className='bg-[#F2F2F2] text-[#3F3F3F] rounded-lg py-2 px-3'>Yes</button>
