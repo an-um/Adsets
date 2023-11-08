@@ -455,8 +455,8 @@ return <>
         <td style={{borderLeft:"none"}} className="px-6 py-4">
 
         <div className="w-100">
-            <h3 className='text-black text-right text-base'>{e.result}</h3>
-            <h4 className='text-black-700 mt-2 font-light text-right text-xs'>On Facebook Leads</h4>
+            <h3 className='text-{#272727} text-right text-base opacity-95'>{e.result}</h3>
+            <h4 className='text-black-700 mt-2 font-normal text-right text-{#707070}text-xs'>On Facebook Leads</h4>
           
 
           </div>

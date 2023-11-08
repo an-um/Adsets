@@ -1,3 +1,6 @@
+@import url('https://fonts.cdnfonts.com/css/segoe-ui-4');
+
+
 *{
   box-sizing: border-box;
   margin: 0;
@@ -14,6 +17,7 @@ html,body{
 html,body{
   width: 100%;
   min-height: 100vh;
+  font-family: 'Segoe UI',sans-serif;
 }
 
 
