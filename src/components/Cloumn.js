@@ -1,6 +1,15 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { changeState } from "../Store/Slices/tabHandler";
+import Group16  from '../assets/icon/Group 16.png';
+import Group37 from '../assets/img/Group 37.svg'
+import arrowDrop from '../assets/icon/Icon ionic-md-arrow-dropdown.svg';
+import editIcon from '../assets/icon/Icon awesome-pen.svg';
+import task from '../assets/icon/task.png';
+import backArrow from '../assets/icon/back-arrow.png';
+import delIcon from '../assets/icon/Icon awesome-trash-alt.png';
+import people from '../assets/icon/Icon material-people.svg'
+import Group33 from '../assets/icon/Group 33.svg';
 
 function Colum() {
   const TabHandlerState = useSelector((state) => state.TabHandler);
@@ -50,21 +59,7 @@ function Colum() {
             TabHandlerState.ad_set_tab === true ? "active" : ""
           }  bg-[#FAFAFA] p-3 flex tab_buttons_container items-center rounded-xl`}
         >
-          <svg
-            class="text-blue-800 h-8"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 18 18"
-          >
-            <path
-              stroke="black"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M6.143 1H1.857A.857.857 0 0 0 1 1.857v4.286c0 .473.384.857.857.857h4.286A.857.857 0 0 0 7 6.143V1.857A.857.857 0 0 0 6.143 1Zm10 0h-4.286a.857.857 0 0 0-.857.857v4.286c0 .473.384.857.857.857h4.286A.857.857 0 0 0 17 6.143V1.857A.857.857 0 0 0 16.143 1Zm-10 10H1.857a.857.857 0 0 0-.857.857v4.286c0 .473.384.857.857.857h4.286A.857.857 0 0 0 7 16.143v-4.286A.857.857 0 0 0 6.143 11Zm10 0h-4.286a.857.857 0 0 0-.857.857v4.286c0 .473.384.857.857.857h4.286a.857.857 0 0 0 .857-.857v-4.286a.857.857 0 0 0-.857-.857Z"
-            />
-          </svg>
+          <img src={Group37} alt="" />
           <b class="ml-2 ">
             Ad Sets
             {checkedColumnsState.campaigns.includes("all")
@@ -119,56 +114,22 @@ function Colum() {
               <button className="bg-[#60BF09]  rounded-lg pl-8 pr-4 py-2 text-white">
                  Create
               </button>
-              <div className="flex gap-1">
-                <button className="bg-[#E6E6E6] p-2.5 opacity-100 rounded-l-lg">
-                  <svg
-                    class="h-[22px] w-[22px]"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="currentColor"
-                    viewBox="0 0 16 20"
-                  >
-                    <path d="M2 18V5.828a4.979 4.979 0 0 1 .332-1.761A.992.992 0 0 0 2 4a2 2 0 0 0-2 2v12a1.97 1.97 0 0 0 1.934 2h8.1a1.99 1.99 0 0 0 1.994-2H2ZM9 5V.13a2.98 2.98 0 0 0-1.293.749L4.879 3.707A2.98 2.98 0 0 0 4.13 5H9Z" />
-                    <path d="M14.066 0H11v5a2 2 0 0 1-2 2H4v7a1.97 1.97 0 0 0 1.934 2h8.132A1.97 1.97 0 0 0 16 14V2a1.97 1.97 0 0 0-1.934-2Z" />
-                  </svg>
-                </button>
-                <button className="bg-[#E6E6E6] p-2 rounded-r-lg ">
-                  <svg
-                    class="h-[22px] w-[9px] "
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="currentColor"
-                    viewBox="0 0 16 10"
-                  >
-                    <path d="M15.434 1.235A2 2 0 0 0 13.586 0H2.414A2 2 0 0 0 1 3.414L6.586 9a2 2 0 0 0 2.828 0L15 3.414a2 2 0 0 0 .434-2.179Z" />
-                  </svg>
-                </button>
+              <div className="flex gap-1 items-center">
+                <div className="bg-[#E6E6E6] p-2.5 opacity-100 rounded-l-lg">
+                  <img src={Group16} alt="" />
+                </div>
+                <div className="bg-[#E6E6E6] p-2 py-3 rounded-r-lg ">
+                 <img src={arrowDrop} alt="" />
+                </div>
               </div>
               <div className="flex gap-1">
-                <button className="bg-[#E6E6E6] p-2 rounded-l-lg">
-                  <svg
-                    class="h-[20px] w-[20px]"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="currentColor"
-                    viewBox="0 0 20 18"
-                  >
-                    <path d="M12.687 14.408a3.01 3.01 0 0 1-1.533.821l-3.566.713a3 3 0 0 1-3.53-3.53l.713-3.566a3.01 3.01 0 0 1 .821-1.533L10.905 2H2.167A2.169 2.169 0 0 0 0 4.167v11.666A2.169 2.169 0 0 0 2.167 18h11.666A2.169 2.169 0 0 0 16 15.833V11.1l-3.313 3.308Zm5.53-9.065.546-.546a2.518 2.518 0 0 0 0-3.56 2.576 2.576 0 0 0-3.559 0l-.547.547 3.56 3.56Z" />
-                    <path d="M13.243 3.2 7.359 9.081a.5.5 0 0 0-.136.256L6.51 12.9a.5.5 0 0 0 .59.59l3.566-.713a.5.5 0 0 0 .255-.136L16.8 6.757 13.243 3.2Z" />
-                  </svg>
-                  <span className="font-bold ps-1">Edit</span>
-                </button>
-                <button className="bg-[#E6E6E6] p-2 rounded-r-lg">
-                  <svg
-                    class=" h-[22px] w-[9px]"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="currentColor"
-                    viewBox="0 0 16 10"
-                  >
-                    <path d="M15.434 1.235A2 2 0 0 0 13.586 0H2.414A2 2 0 0 0 1 3.414L6.586 9a2 2 0 0 0 2.828 0L15 3.414a2 2 0 0 0 .434-2.179Z" />
-                  </svg>
-                </button>
+                <div className="flex justify-between bg-[#E6E6E6] p-2 px-3 rounded-l-lg">
+                  <img src={editIcon} alt="" />
+                  <span className="xl-text-[19px] text-[#707070] col font-bold ps-1">Edit</span>
+                </div>
+                <div className=" bg-[#E6E6E6] p-2 pt-3 rounded-r-lg">
+                  <img src={arrowDrop} alt="" />
+                </div>
               </div>
               <button className="bg-[#E6E6E6] p-2 rounded-lg ">
                 <svg
@@ -188,81 +149,23 @@ function Colum() {
                 </svg>
                 <b className="text-black ps-2">A/BTest</b>
               </button>
-              <button className="bg-[#E6E6E6] p-2 rounded-lg ">
-                <svg
-                  class="w-[22px] h-[22px]"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 18 20"
-                >
-                  <path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M12 2h4a1 1 0 0 1 1 1v15a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h4m6 0a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1m6 0v3H6V2M5 5h8m-8 5h8m-8 4h8"
-                  />
-                </svg>
-              </button>
-              <button className="bg-[#E6E6E6] p-2 rounded-lg">
-                <svg
-                  class="w-[22px] h-[22px]"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 16 14"
-                >
-                  <path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M4 7 1 4l3-3m0 12h6.5a4.5 4.5 0 1 0 0-9H2"
-                  />
-                </svg>
-              </button>
+              <div className="bg-[#E6E6E6] p-2 px-3 pt-2 rounded-lg ">
+                <img src={task} alt="" className="pt-1" />
+              </div>
+              <div className="bg-[#E6E6E6] p-2 rounded-lg">
+                <img src={backArrow} alt="" />
+              </div>
 
-              <button className="bg-[#E6E6E6] p-2 rounded-lg">
-                <svg
-                  class="w-[22px] h-[22px]"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor"
-                  viewBox="0 0 18 20"
-                >
-                  <path d="M17 4h-4V2a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v2H1a1 1 0 0 0 0 2h1v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V6h1a1 1 0 1 0 0-2ZM7 2h4v2H7V2Zm1 14a1 1 0 1 1-2 0V8a1 1 0 0 1 2 0v8Zm4 0a1 1 0 0 1-2 0V8a1 1 0 0 1 2 0v8Z" />
-                </svg>
-              </button>
-              <button className="bg-[#E6E6E6] p-2 rounded-lg">
-                <svg
-                  class="w-[22px] h-[22px]"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor"
-                  viewBox="0 0 20 18"
-                >
-                  <path d="M14 2a3.963 3.963 0 0 0-1.4.267 6.439 6.439 0 0 1-1.331 6.638A4 4 0 1 0 14 2Zm1 9h-1.264A6.957 6.957 0 0 1 15 15v2a2.97 2.97 0 0 1-.184 1H19a1 1 0 0 0 1-1v-1a5.006 5.006 0 0 0-5-5ZM6.5 9a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9ZM8 10H5a5.006 5.006 0 0 0-5 5v2a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1v-2a5.006 5.006 0 0 0-5-5Z" />
-                </svg>
-              </button>
-              <button className="bg-[#E6E6E6] p-2 rounded-lg">
-                <svg
-                  class="w-[22px] h-[22px] ml-3 text-gray-800 dark:text-white"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 16 14"
-                >
-                  <path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M11 10H1m0 0 3-3m-3 3 3 3m1-9h10m0 0-3 3m3-3-3-3"
-                  />
-                </svg>
-              </button>
-              <b className="flex bg-[#E6E6E6] p-2 rounded-lg">Rules
+              <div className="bg-[#E6E6E6] p-2 rounded-lg">
+               <img src={delIcon} alt="" className="pt-1"/>
+              </div>
+              <div className="bg-[#E6E6E6] p-2 rounded-lg">
+                <img src={people} alt="" className="pt-1"/>
+              </div>
+              <div className="bg-[#E6E6E6] p-2 rounded-lg">
+               <img src={Group33} alt="" className="pt-1"/>
+              </div>
+              <b className="flex xl-text-[19px] text-[#707070] bg-[#E6E6E6] p-2 rounded-lg">Rules
               <button className="">
                 <svg
                   class="w-[9px] h-[20px]"
@@ -285,7 +188,7 @@ function Colum() {
                   <div class="absolute left-0 top-0 w-6 h-6 bg-black rounded-full shadow-md transform translate-x-0 transition duration-300 ease-in-out"></div>
                 </div>
               </label>
-              <button className="bg-[#E6E6E6] p-2 rounded-lg w-[86px]">
+              <button className="flex justify-between bg-[#E6E6E6] p-2  rounded-lg w-[86px]">
                 <svg
                   class="w-[23px] h-[20px] ml-3 text-gray-800 dark:text-white"
                   aria-hidden="true"
@@ -295,10 +198,8 @@ function Colum() {
                 >
                   <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h3V0H2Zm16 0h-3v16h3a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2Zm-5 0H7v16h6V0Z" />
                 </svg>
-              </button>
-              <button className="bg-[#E6E6E6] p-2 rounded-lg">
                 <svg
-                  class="h-[22px] w-[9px] text-gray-800 dark:text-white"
+                  class="h-[22px] w-[9px] ml-3 pl-4 text-gray-800 dark:text-white"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"
@@ -307,6 +208,8 @@ function Colum() {
                   <path d="M15.434 1.235A2 2 0 0 0 13.586 0H2.414A2 2 0 0 0 1 3.414L6.586 9a2 2 0 0 0 2.828 0L15 3.414a2 2 0 0 0 .434-2.179Z" />
                 </svg>
               </button>
+              {/* <button className="bg-[#E6E6E6] p-2 rounded-lg">
+              </button> */}
               <button className="bg-[#E6E6E6] p-2 rounded-lg">
                 <svg
                   class="h-[22px] w-[15px]"

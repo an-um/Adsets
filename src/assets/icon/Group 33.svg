@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20.374" height="19.564" viewBox="0 0 20.374 19.564">
+  <g id="Group_33" data-name="Group 33" transform="translate(-931.059 -370.063)">
+    <path id="Icon_awesome-arrow-left" data-name="Icon awesome-arrow-left" d="M5.795,11.82l-.5.5a.538.538,0,0,1-.763,0L.155,7.946a.538.538,0,0,1,0-.763L4.532,2.806a.538.538,0,0,1,.763,0l.5.5a.541.541,0,0,1-.009.772L3.073,6.663h6.47a.539.539,0,0,1,.54.54v.72a.539.539,0,0,1-.54.54H3.073l2.713,2.585A.537.537,0,0,1,5.795,11.82Z" transform="translate(932.062 377.148)" fill="#707070"/>
+    <path id="Icon_awesome-arrow-left-2" data-name="Icon awesome-arrow-left" d="M4.285,11.82l.5.5a.538.538,0,0,0,.763,0L9.925,7.946a.538.538,0,0,0,0-.763L5.548,2.806a.538.538,0,0,0-.763,0l-.5.5a.541.541,0,0,0,.009.772L7.007,6.663H.537A.539.539,0,0,0,0,7.2v.72a.539.539,0,0,0,.54.54h6.47L4.294,11.048A.537.537,0,0,0,4.285,11.82Z" transform="translate(941.062 373.148)" fill="#707070"/>
+    <path id="Path_18" data-name="Path 18" d="M932.059,380.5v-9.437h18.374V377.1" fill="none" stroke="#707070" stroke-width="2"/>
+  </g>
+</svg>
