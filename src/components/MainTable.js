@@ -261,19 +261,19 @@ return <>
   <table className="w-full text-sm text-left  [&_tr_td]:text-black-700  [&_tr_td]:border [&_tr_td]:border-gray-200 [&_tr_th]:border [&_tr_th]:border-gray-200   text-gray-500">
     <thead className="text-xs text-black [&_tr_th]:capitalize [&_tr_th]:text-base  uppercase bg-white">
       <tr>
-        <th scope="col" className=" py-4 px-3">
+        <th scope="col" className=" py-2 px-1">
           <div className="flex items-center justify-content-between">
             
               <GetAllCheckBoxComp/>
             
          
           
-            <label htmlFor="checkbox-all-search" className="font-bold xl:text-[20px]">
+            <label htmlFor="checkbox-all-search" className="xl:text-[19px] font-semibold ms-2">
               Off/On
             </label>
           </div>
         </th>
-        <th scope="col" style={{borderRight:"none"}} className="px-6 py-3">
+        <th scope="col" style={{borderRight:"none"}} className="px-3 py-3">
           
           {TabsState.campaign_tab===true?"Campaigns":""}
           {TabsState.ad_set_tab===true?"Ad Sets":""}
@@ -281,13 +281,13 @@ return <>
         </th>
         {TabsState.campaign_tab===true?
 
-        <th scope="col"  className="px-6 py-3">
+        <th scope="col"  className="px-3 py-3">
           Delivery
         </th>
         :""
         }
         {/* ================ Result Column Start===========  */}
-        <th scope="col" style={{borderLeft:"none"}} className="  text-right border-l px-6 py-3">
+        <th scope="col" style={{borderLeft:"none"}} className="  text-right border-l px-3 py-3">
           <div className="flex justify-content-center gap-x-1 flex-flex-nowrap items-center">
 
         <FcInfo className='d-inline  '/>  Result <BiSolidDownArrow className='d-inline text-gray-300 text-xs   ' />
@@ -295,7 +295,7 @@ return <>
         </th>
         {/* ================ Result Column end ===========  */}
         {/* ================ Reach Column Start ===========  */}
-        <th scope="col" className="px-6 py-3">
+        <th scope="col" className="px-3 py-3">
         <div className="flex justify-content-center gap-x-1 flex-flex-nowrap items-center">
           Reach
           <BiSolidDownArrow className='d-inline text-gray-300 text-xs ml-auto  ' />
@@ -303,23 +303,23 @@ return <>
         </th>
         {/* ================ Reach Column End ===========  */}
         {/* ================ Frequency Column Start ===========  */}
-        <th scope="col" className="px-6 py-3">
+        <th scope="col" className="px-3 py-3">
         <div className="flex justify-content-center gap-x-1 flex-flex-nowrap items-center">
           Frequency   <BiSolidDownArrow className='d-inline text-gray-300 text-xs ml-auto  ' />
           </div>
         </th>
         {/* ================ Frequency Column End ===========  */}
         {/* ================ cost per result Column start ===========  */}
-        <th scope="col" className="px-6 min-w-[180px] py-3">
+        <th scope="col" className="px-3 min-w-[180px] py-3">
         <div className="flex justify-content-center gap-x-1 flex-flex-nowrap items-center">
           Cost Per Result  <BiSolidDownArrow className='d-inline text-gray-300 text-xs  ' />
           </div>
         </th>
         {/* ================ cost per result Column End ===========  */}
-        <th scope="col" className="px-6 py-3 min-w-[180px] ">
+        <th scope="col" className="px-3 py-3 min-w-[180px] ">
           Budget  <BiSolidDownArrow className='d-inline text-gray-300 text-xs ml-auto  ' />
         </th>
-        <th scope="col" className="px-6 py-3 min-w-[180px] ">
+        <th scope="col" className="px-3 py-3 min-w-[180px] ">
           Amount Spent  <BiSolidDownArrow className='d-inline text-gray-300 text-xs ml-auto  ' />
         </th>
        
@@ -334,7 +334,7 @@ return <>
         allCampaign.map((e,i)=>  <tr key={"key"+generate_random(4)} className={i%2===0?"bg-gray-100 ":"bg-white"}>
       
       {/* ========= check box starting ======  */}
-        <td className=" p-4">
+        <td className=" px-2 py-1">
           <div className="flex items-center justify-content-between">
             
                 {/* <GetCheckboxes   e={e} i={i}/> */}
@@ -411,17 +411,17 @@ return <>
         </td>
         {/* --------------------------- check box column end -----  */}
         {/* --------------------------- campaign name column start -----  */}
-        <td style={{borderRight:"none"}} className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap ">
+        <td style={{borderRight:"none"}} className="px-3 py-1 font-medium text-gray-900 whitespace-nowrap ">
           
           <div className="w-100 edit_options_container">
-            <h3 className='text-blue-600 text-left text-base'>
+            <h3 className='text-[#4878C0] font-semibold text-left text-base'>
               {TabsState.campaign_tab===true?e.campaign_name:""}
               {TabsState.ad_set_tab===true?e.add_set_name:""}
               {TabsState.ads_tab===true?e.adds_name:""}
             </h3>
 
 
-            <div className="editOptions   mt-2 w-100 flex flex-row gap-x-2 [&_button_edit_buttons_icons]:text-black  [&_button]:flex [&_button]:items-center [&_button]:text-xs  ">
+            <div className="editOptions mt-1 w-100 flex flex-row gap-x-2 [&_button_edit_buttons_icons]:text-black  [&_button]:flex [&_button]:items-center [&_button]:text-xs  ">
               <button className='hover:opacity-[0.5] '><CgLoadbarSound className='editBtnIcons text-base mr-1'/> View Chart</button>
               <button className='hover:opacity-[0.5]' ><BiSolidPencil className='editBtnIcons mr-1' /> Edit</button>
               <button className='hover:opacity-[0.5]' ><BsPinAngleFill  className='editBtnIcons mr-1'/> Pin</button>
@@ -436,10 +436,10 @@ return <>
         {TabsState.campaign_tab===true?
 
 
-        <td style={{borderLeft:"none"}} className="px-6 py-4">
+        <td style={{borderLeft:"none"}} className="px-3 py-1">
 
         <div className="w-100">
-            <h3 className='text-black text-right text-base'>Off</h3>
+            <h3 className='text-[#707070] text-right text-base font-normal'>Off</h3>
          
           
 
@@ -452,11 +452,11 @@ return <>
 
         {/* ======= Delivery Status end =====  */}
         {/* ======= Result column start =====  */}
-        <td style={{borderLeft:"none"}} className="px-6 py-4">
+        <td style={{borderLeft:"none"}} className="px-3 py-1 w-[20%]">
 
         <div className="w-100">
-            <h3 className='text-{#272727} text-right text-base opacity-95'>{e.result}</h3>
-            <h4 className='text-black-700 mt-2 font-normal text-right text-{#707070}text-xs'>On Facebook Leads</h4>
+            <h3 className='text-[#272727] text-right text-base font-semibold'>{e.result}</h3>
+            <h4 className='text-[#707070] font-semibold text-right text-{#707070;}text-xs mt-1'>On Facebook Leads</h4>
           
 
           </div>
@@ -464,36 +464,36 @@ return <>
         </td>
         {/* ======= Result column End =====  */}
         {/* ======= Reach column Start =====  */}
-        <td className="px-6 py-4">
-        <h3 className='text-black text-right text-base'>{e.reach}</h3>
+        <td className="px-3 py-1">
+        <h3 className='text-[#272727] text-right text-base font-semibold'>{e.reach}</h3>
 
           
         </td>
         {/* ======= Reach column End =====  */}
         {/* ======= Frequency column Start =====  */}
-        <td className="px-6 py-4">
-        <h3 className='text-black text-right text-base'>{e.frequency}</h3>
+        <td className="px-3 py-1">
+        <h3 className='text-[#272727] text-right text-base font-semibold'>{e.frequency}</h3>
 
         </td>
         {/* ======= Frequency column End =====  */}
         {/* ======= cost per result column Start =====  */}
-        <td className="px-6 py-4">
-        <h3 className='text-black text-right text-base'>{e.cost_per_lead}<span>د۔ا</span>
+        <td className="px-3 py-1 ">
+        <h3 className='text-[#272727] text-right text-base font-semibold'>{e.cost_per_lead}<span>د۔ا</span>
         </h3>
-          <h4 className='text-black-700 mt-2 text-right font-light text-xs'>On Facebook Leads</h4>
+          <h4 className='text-[#707070] mt-1 text-right font-light text-xs'>On Facebook Leads</h4>
 
           </td>
         {/* ======= cost per result column End =====  */}
         {/* ======= Buget column Start =====  */}
-        <td className="px-6 py-4">
-        <h3 className='text-black text-right text-base'>{e.budget}<span>د۔ا</span>
-          <h4 className='text-black-700 mt-2 text-right font-light text-xs'>Daily</h4>
+        <td className="px-3 py-1">
+        <h3 className='text-[#272727] text-right text-base font-semibold'>{e.budget}<span>د۔ا</span>
+          <h4 className='text-[#707070] mt-1 text-right font-light text-xs'>Daily</h4>
         </h3>
           </td>
         {/* ======= Budget column End =====  */}
         {/* ======= Amount spend column Start =====  */}
-        <td className="px-6 py-4">
-        <h3 className='text-black text-right text-base'>{e.amount_spend}<span>د۔ا</span>
+        <td className="px-3 py-1">
+        <h3 className='text-black text-right text-base font-semibold'>{e.amount_spend}<span>د۔ا</span>
         </h3>
           </td>
         {/* ======= Amount Spent column End =====  */}
